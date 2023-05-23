@@ -5,7 +5,7 @@ There are two endpoints where you can enter **id** or a **food term**. <br>
 Clone Docker conntainer: <br>
 `docker build -t foodmenu . && docker remove mlops ; docker run -p 5000:5000 --name mlops foodmenu`
 To run Docker image navigate to the location of the folder in terminal and use this command: <br>
-`docker run my-python-app` <br>
+`docker run foodmenu` <br>
 
 Run python script and open your browser. <br>
 There you will need to type in:  <br>
