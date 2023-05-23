@@ -2,15 +2,12 @@ from flask import Flask, jsonify, request
 import os
 app = Flask(__name__)
 import json
-# Load the menu data from the JSON files
 menu_data = []
 
 def load_json_files(directory):
     json_data = []
 
-    # Iterate over all files in the directory
     for filename in os.listdir(directory):
-        # Check if the file is a JSON file
         if filename.endswith('.json'):
             file_path = os.path.join(directory, filename)
             try:
@@ -53,4 +50,4 @@ def get_customers_by_food(food_term):
 
 if __name__ == '__main__':
     menu_data = load_json_files(".")
-    app.run()
+    app.run(host='0.0.0.0')
