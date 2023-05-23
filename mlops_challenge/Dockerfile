@@ -15,6 +15,3 @@ CMD ["python", "Menu_api.py"]
 
 #Flask Dependency
 RUN pip install flask
-
-# Set the entrypoint command to run the Python script
-CMD ["python", "Menu_api.py"]
